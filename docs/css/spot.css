@@ -1,0 +1,561 @@
+/* CSS Document */
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+address {
+    font-style: normal;
+}
+
+ul.classLink {
+    display: none;
+}
+
+.m_classLink {
+    display: block;
+    position: relative;
+    letter-spacing: .05em;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.m_classLink a.main {
+    display: block;
+    font-size: 15px;
+    border: 1px solid #CCC;
+    position: relative;
+    padding: 10px;
+    background-color: #9eb219;
+    color: #fff;
+    /* IE6-9 */
+}
+
+.m_classLink a.main b {
+    font-weight: 400;
+}
+
+.m_classLink a.main i {
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.m_classLink .iconStar {
+    display: none;
+}
+
+.m_classLink ul {
+    padding: 0;
+    list-style: none;
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 10;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.m_classLink ul li {
+    padding: 0;
+}
+
+.m_classLink ul li a {
+    display: block;
+    padding: 12px 10px;
+    font-size: 14px;
+    border-top: 1px solid #d1d1d1;
+}
+
+.m_classLink ul li:first-child a {
+    border: none;
+}
+
+.outerWrap {
+    padding-top: 0;
+    padding-top: 20px;
+}
+
+.mainArea {
+    padding: 30px 0 90px;
+    padding: 30px 0 220px;
+}
+
+.mapArea {
+    position: relative;
+    z-index: 0;
+}
+
+@media (max-width: 1180px) {
+    .mapArea {
+        margin-top: 0;
+    }
+}
+
+.mapText {
+    max-width: 200px;
+    padding: 12px;
+    color: #000;
+    font-weight: 400;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.mapText .text {
+    padding-top: 5px;
+    color: #555;
+}
+
+.mapText a {
+    font-size: 12px;
+    padding: 5px 12px;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.mapText a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.mapText .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 5px;
+}
+
+.mapText .bottom a {
+    margin-right: 4px;
+}
+
+#storeMap {
+    width: 100%;
+    height: 75vh;
+}
+
+@media (max-width: 1023px) {
+    #storeMap {
+        height: 50vh;
+    }
+}
+
+#storeMap.ins {
+    height: 40vh;
+}
+
+.spotListTop,
+.spotList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.spotListTop .itemBox,
+.spotList .itemBox {
+    padding: 10px;
+}
+
+.spotListTop .title,
+.spotList .title {
+    width: 20%;
+}
+
+.spotListTop .phone,
+.spotList .phone {
+    width: 20%;
+}
+
+.spotListTop .address,
+.spotList .address {
+    width: 40%;
+}
+
+.spotListTop .gps,
+.spotList .gps {
+    width: 10%;
+}
+
+.spotListTop .more,
+.spotList .more {
+    width: 10%;
+}
+
+.spotListTop .center,
+.spotList .center {
+    text-align: center;
+}
+
+.spotListTop {
+    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: .05em;
+    background-color: #9eb219;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .spotListTop {
+        display: none;
+    }
+}
+
+.spotList li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.spotList .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .spotList .item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    .spotList .itemBox {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+    .spotList .itemBox::before {
+        content: attr(data-title);
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        width: 100px;
+        color: #fff;
+        font-size: 14px;
+        background-color: #9eb219;
+        border-bottom: 1px solid #fff;
+    }
+    .spotList .itemBox .box, .spotList .itemBox::before {
+        padding: 15px 10px;
+    }
+    .spotList .itemBox .box {
+        width: 100%;
+    }
+}
+
+.spotList .box {
+    font-size: 15px;
+    font-size: 17px;
+}
+
+@media (min-width: 768px) {
+    .spotList .gps {
+        font-size: 18px;
+    }
+}
+
+.spotList .gps a {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+}
+
+@media (max-width: 767px) {
+    .spotList .gps a {
+        width: 100%;
+    }
+}
+
+.pageBox {
+    padding: 20px 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.pageBox a {
+    font-size: 17px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.pageBox a.current {
+    color: #ffbc0d;
+}
+
+.pageBox a.prevArrow, .pageBox a.nextArrow {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #99a737;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.pageBox a.prevArrow i, .pageBox a.nextArrow i {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    color: #99a737;
+}
+
+.pageBox a.prevArrow:hover, .pageBox a.nextArrow:hover {
+    border-color: #ffbc0d;
+    background-color: #ffbc0d;
+}
+
+.pageBox a.prevArrow:hover i, .pageBox a.nextArrow:hover i {
+    color: #fff;
+}
+
+@media (max-width: 440px) {
+    .pageBox a {
+        font-size: 13px;
+        padding: 0 5px;
+    }
+    .pageBox a.prevArrow, .pageBox a.nextArrow {
+        margin: 0 5px;
+        width: 20px;
+        height: 20px;
+    }
+    .pageBox a.prevArrow i, .pageBox a.nextArrow i {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+.classBox {
+    padding: 30px 50px 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.classBox .searchForm {
+    display: block;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.classBox .city {
+    width: 25%;
+    padding: 0 20px;
+}
+
+.classBox .location {
+    width: 25%;
+    padding: 0 20px;
+}
+
+.classBox .nice-select {
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    border-color: #9eb219;
+}
+
+.classBox .nice-select .list {
+    width: 100%;
+    border-radius: 20px;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.classBox .nice-select .option {
+    width: 100%;
+}
+
+.classBox .nice-select .option:hover, .classBox .nice-select .option:focus {
+    background-color: rgba(158, 178, 25, 0.3);
+}
+
+.classBox .nice-select .option.selected.focus {
+    background-color: #9eb219;
+}
+
+.classBox .nice-select:hover {
+    border-color: #9eb219;
+}
+
+.classBox .searchBox {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.classBox .searchBox .inputWrap {
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.classBox .searchBox .inputWrap::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-image: url(../images/btnBg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    opacity: 0;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.classBox .searchBox .inputWrap.focus::before {
+    opacity: 1;
+    bottom: -40px;
+}
+
+.classBox .searchBox .inputWrap.focus .input {
+    background-color: #9eb219;
+    border: 1px solid #9eb219;
+}
+
+.classBox .searchBox .input {
+    background-color: #9eb219;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #9eb219;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.classBox .searchBox .input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.classBox .searchBox .input::-moz-placeholder {
+    color: #fff;
+}
+
+.classBox .searchBox .input:-ms-input-placeholder {
+    color: #fff;
+}
+
+.classBox .searchBox .input::-ms-input-placeholder {
+    color: #fff;
+}
+
+.classBox .searchBox .input::placeholder {
+    color: #fff;
+}
+
+.classBox .searchBtnBox {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.classBox .searchBtnBox .searchBtn {
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background-color: #99a737;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    border-radius: 5px;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+.classBox .searchBtnBox .searchBtn:hover {
+    background-color: #ffbc0d;
+    color: #fff;
+}
+
+@media (max-width: 840px) {
+    .classBox {
+        padding: 30px  20px;
+    }
+    .classBox .searchForm {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .classBox .city, .classBox .location {
+        width: 50%;
+        margin: 10px 0;
+    }
+    .classBox .searchBox {
+        margin: 10px 0 20px;
+    }
+    .classBox .searchBtnBox {
+        margin: 20px 0 0px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .classBox .city, .classBox .location {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0px;
+    }
+    .classBox .searchBox {
+        margin: 10px 0 20px;
+    }
+    .classBox .searchBtnBox {
+        margin: 20px 0 0px;
+        width: 100%;
+    }
+}
+/*# sourceMappingURL=spot.css.map */

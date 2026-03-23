@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /manage
+Disallow: /bbpe
+Disallow: /public/lineBot
+Disallow: /*/act/
+Disallow: /*/act.php

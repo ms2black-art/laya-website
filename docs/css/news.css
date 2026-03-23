@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+address {
+    font-style: normal;
+}
+
+/********標題區*******/
+.titleArea {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    background-image: url("../images/dot_x.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
+
+.titleArea .newsDate {
+    font-size: 14px;
+    color: #757575;
+    letter-spacing: .04em;
+    font-family: "Poppins", "Noto Sans TC", sans-serif;
+}
+
+.titleArea .newsDate strong,
+.titleArea .newsDate b {
+    font-weight: 400;
+}
+
+.titleArea h1 {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.textEditor {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    background-image: url("../images/dot_x.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
+/*# sourceMappingURL=news.css.map */

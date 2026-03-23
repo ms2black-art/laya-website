@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* CSS Document */
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+address {
+    font-style: normal;
+}
+
+/*文字編輯器*/
+.textEditor {
+    clear: both;
+    font-size: 16px;
+    font-size: 18px;
+    color: #232323;
+    line-height: 1.8;
+}
+
+.textEditor .myTitle {
+    font-weight: 700;
+    font-size: 20px;
+    color: #51649A;
+}
+
+.textEditor img {
+    max-width: 100%;
+}
+
+.textEditor ul {
+    list-style: disc outside;
+    padding-left: 30px;
+}
+
+.textEditor ol {
+    list-style: decimal outside;
+    padding-left: 30px;
+}
+
+.textEditor table {
+    border-collapse: collapse;
+}
+
+.textEditor th {
+    padding: 5px;
+    border: 1px solid #e1e1e1;
+    color: #fff;
+    text-align: center;
+    background-color: #51649A;
+}
+
+.textEditor td {
+    padding: 5px;
+    border: 1px solid #e1e1e1;
+}
+
+.textEditor hr {
+    height: 1px;
+    border: none;
+    background: #e9e9e9;
+}
+
+.textEditor blockquote {
+    font-style: italic;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding: 2px 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+.textEditor .title {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    font-size: 20px;
+    letter-spacing: .04em;
+}
+
+.textEditor .title2 {
+    position: relative;
+    line-height: 1;
+    padding-left: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-size: 17px;
+    letter-spacing: .04em;
+    color: #232323;
+    border-left: 3px solid #000;
+}
+
+.textEditor .subTitle {
+    margin-bottom: 15px;
+    font-size: 15px;
+    letter-spacing: .04em;
+}
+
+.textEditor .text {
+    color: #7b7b7b;
+}
+
+.textEditor .dotText {
+    position: relative;
+    padding-left: 15px;
+    padding-left: 17px;
+    margin-bottom: 3px;
+}
+
+.textEditor .dotText::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 4px;
+    height: 4px;
+    background-color: #232323;
+}
+
+.textEditor .bgText {
+    background-color: #6e5726;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 20px;
+    line-height: 1.7;
+    font-size: 14px;
+    font-size: 16px;
+}
