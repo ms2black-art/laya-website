@@ -90,4 +90,12 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- 加盟常見問題 FAQ -->
+  <url>
+    <loc>https://ms2black-art.github.io/laya-website/faq/</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
